@@ -1,0 +1,50 @@
+permissions:
+  perms:
+    - url: /login.jsp
+      permission: anon
+    - url: /constant.jsp
+      permission: anon
+    - url: /static/**
+      permission: anon
+    - url: /sys/toBrief.action
+      permission: anon
+    - url: /sys/helloPage.action
+      permission: anon
+    - url: /sys/toLogin.action
+      permission: anon
+    - url: /sys/userLogin.action
+      permission: kickout
+    - url: /fullview/customer/**
+      permission: anon
+    - url: /base/BaseController/fullView/fullViewCustom.action
+      permission: jwtperms[quantitative_analysis_view,business_opportunity_analysis_view,MSS_analysis_view,OSS_analysis]
+    - url: /base/BaseController/fullView/fullViewIndex.action
+      permission: jwtperms[product_view]
+    - url: /base/BaseController/multidimensionalReport/custNumSolidReport.action
+      permission: jwtperms[direct_cust_tree_rept]
+    - url: /base/BaseController/chrpt/warmSpring.action
+      permission: jwtperms[warm_spring_rept]
+    - url: /base/BaseController/warmspring/warmspring.action
+      permission: jwtperms[warm_spring_action]
+    - url: /base/BaseController/sys/forgetPWD.action
+      permission: anon
+    #    - url: /fullView/detail/**
+    #      permission: anon
+    #    - url: /fullView/custom/**
+    #      permission: anon
+    - url: /external/**
+      permission: anon
+    - url: /hotspot/accountIdController/**
+      permission: anon
+    - url: /sys/access/**
+      permission: anon
+    - url: /sysUpdate/**
+      permission: anon
+
+
+
+user:
+  userId: 1
+  userName: qty
+  userPwd: qty
+  perms: update

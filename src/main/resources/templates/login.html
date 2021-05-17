@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+
+</head>
+<script src="/js/jquery.min.js"></script>
+<body>
+登录页面
+<h3 style="color: red" th:text="${msg}"></h3>
+<form id="loginForm" action="/user/login" method="post">
+    用户名：<input type="text" name="userName"><br>
+    密码：<input type="password" name="userPwd"><br>
+    <input type="submit" id="loginBut" value="登录">
+</form>
+</body>
+<script>
+    /*$("#loginBut").click(function (){
+        $.ajax({
+            url:"/user/login",
+            type:"post",
+            data:$("#loginForm").serialize(),
+            dataType:"json",
+            success:function (data){
+                alert(data)
+                alert("登录成功")
+            },error:function (){
+                alert("登陆失败")
+            }
+        })
+    })*/
+</script>
+</html>
